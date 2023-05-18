@@ -118,7 +118,7 @@ typedef struct builtin
 /*func to handle user input & execute shell comm. in the shell program*/
 int hsh(info_t *, char **);
 int find_builtin(info_t *);
-void find_cmd(info_t *); 
+void find_cmd(info_t *);
 void fork_cmd(info_t *);
 
 /*func to check if a given str is a valid shell,duplicate str,serch in $PATH*/
@@ -126,7 +126,8 @@ int is_cmd(info_t *, char *);
 char *dup_chars(char *, int, int);
 char *find_path(info_t *, char *, char *);
 
-int loophsh(char **);/*Entry point for a shell program*/
+/*Entry point for a shell program*/
+int loophsh(char **);
 
 int bfree(void **);
 
